@@ -10,6 +10,8 @@ CREATE TABLE Category
     category    tinyint(5) NOT NULL,
     PRIMARY KEY (category_id)
 );
+
+
+alter table Category change category category tinytext;
+
 describe Category;
-
-

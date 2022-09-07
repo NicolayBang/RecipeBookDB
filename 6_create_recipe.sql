@@ -17,6 +17,8 @@
     FOREIGN KEY (difficulty_id) REFERENCES Difficulty(difficulty_id)
 );
 
+alter table Recipe change column category_id category_id INT NOT NULL;
+
 describe Recipe;
 
 

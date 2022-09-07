@@ -1,0 +1,71 @@
+/*
+
+ insert into table user the following data:
+ pseudo=Nicolay, email = nicolaybang@gmail.com
+ */
+
+INSERT INTO User (pseudo, email) VALUES ('Nicolay', 'nicolaybang@gmail.com');
+select *
+from User;
+
+/*
+ insert into table difficulty the numbers 0 to 10
+*/
+
+INSERT INTO Difficulty (difficulty) VALUES (0), (1), (2), (3), (4), (5), (6), (7), (8), (9), (10);
+select * from Difficulty;
+
+
+INSERT INTO Category (category) VALUES ('Gastro'), ('Fusion'), ('French'), ('Italian'),
+                                       ('Japanese'), ('Mexican'), ('Chinese'), ('Indian'), ('Thai'), ('Vietnamese'),
+                                       ('Middle Eastern'), ('Spanish'), ('American'), ('British'), ('German'),
+                                       ('Greek'), ('Portuguese'), ('Russian'), ('Turkish'), ('African'), ('Caribbean'),
+                                       ('South American'), ('Fast Food'),('BBQ'),('Healthy'),('Vegan'),('Gluten-Free'),
+                                       ('Traditional'),('Scandinavian'),('Canadian'),('Other');
+select * from Category;
+
+describe Recipe;
+
+/*
+ insert into table recipe the following data:
+ name = 'Mint Tea', description = 'A nice cup of mint tea', ingredients ='500ml of water, 50g of Mint Tea', directions ='1) Boil water. 2) Pour water into cup. 3) Let stand for 3-5minutes' , difficulty_id = 3, category_id = 11, user_id =1
+*/
+
+INSERT INTO Recipe (name, description, ingredients, directions, difficulty_id, category_id, user_id)
+VALUES ('Mint Tea', 'A nice cup of mint tea', '500ml of water, 50g of Mint Tea', '1) Boil water. 2) Pour water into cup. 3) Let stand for 3-5minutes', 3, 11, 1);
+
+select * from Recipe;
+
+/*
+ insert into table recipe the following data:
+ name = 'Chocolate Cake', description = 'A nice piece of chocolate cake', ingredients ='500g of flour, 500g of sugar, 500g of chocolate', directions ='1) Mix flour and sugar. 2) Add chocolate. 3) Bake for 20 minutes' , difficulty_id = 5, category_id = 22, user_id =1
+*/
+
+INSERT INTO Recipe (name, description, ingredients, directions, difficulty_id, category_id, user_id)
+VALUES ('Chocolate Cake', 'A nice piece of chocolate cake', '500g of flour, 500g of sugar, 500g of chocolate', '1) Mix flour and sugar. 2) Add chocolate. 3) Bake for 20 minutes', 5, 13, 1);
+
+select * from Recipe;
+
+/*
+ insert into table recipe the following data:
+ name = 'Pasta', description = 'A nice plate of pasta', ingredients ='500g of pasta, 500g of tomato sauce, 500g of cheese', directions ='1) Boil water. 2) Cook pasta. 3) Mix sauce and cheese. 4) Serve' , difficulty_id = 3, category_id = 4, user_id =1
+*/
+
+INSERT INTO Recipe (name, description, ingredients, directions, difficulty_id, category_id, user_id)
+VALUES ('Pasta', 'A nice plate of pasta', '500g of pasta, 500g of tomato sauce, 500g of cheese', '1) Boil water. 2) Cook pasta. 3) Mix sauce and cheese. 4) Serve', 3, 4, 1);
+
+select * from Recipe;
+
+/*
+ insert into table recipe the following data:
+ name = 'Pizza', description = 'A nice slice of pizza', ingredients ='500g of dough, 500g of tomato sauce, 500g of cheese', directions ='1) Roll out dough.
+
+
+
+/*
+ insert into table category the following data:
+ category = 'PHP'
+ */
+
+
+
