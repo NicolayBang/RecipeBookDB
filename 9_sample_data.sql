@@ -27,6 +27,11 @@ INSERT INTO Category (category) VALUES ('Gastro'), ('Fusion'), ('French'), ('Ita
 select * from Category;
 
 
+INSERT INTO Instruction (instruction) VALUE ('Boil water');
+INSERT INTO Instruction (instruction) VALUE ('Pour water into cup');
+INSERT INTO Instruction (instruction) VALUE ('Let stand');
+
+
 /*
  insert into table recipe the following data:
  name = 'Mint Tea', description = 'A nice cup of mint tea', ingredients ='500ml of water, 50g of Mint Tea', directions ='1) Boil water. 2) Pour water into cup. 3) Let stand for 3-5minutes' , difficulty_id = 3, category_id = 11, user_id =1
