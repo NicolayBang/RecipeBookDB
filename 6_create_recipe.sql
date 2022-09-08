@@ -3,7 +3,7 @@
     recipe_id INT NOT NULL AUTO_INCREMENT,
     user_id INT NOT NULL,
     image_id INT DEFAULT NULL,
-    category_id INT DEFAULT NULL,
+    category_id INT NOT NULL,
     difficulty_id INT DEFAULT NULL,
     date_created DATETIME DEFAULT CURRENT_TIMESTAMP,
     name TINYTEXT NOT NULL,
@@ -17,7 +17,6 @@
     FOREIGN KEY (difficulty_id) REFERENCES Difficulty(difficulty_id)
 );
 
-alter table Recipe change column category_id category_id INT NOT NULL;
 
 describe Recipe;
 

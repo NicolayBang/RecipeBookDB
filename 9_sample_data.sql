@@ -1,3 +1,5 @@
+use recipe_db_v2;
+
 /*
 
  insert into table user the following data:
@@ -24,7 +26,6 @@ INSERT INTO Category (category) VALUES ('Gastro'), ('Fusion'), ('French'), ('Ita
                                        ('Traditional'),('Scandinavian'),('Canadian'),('Other');
 select * from Category;
 
-describe Recipe;
 
 /*
  insert into table recipe the following data:
@@ -34,7 +35,7 @@ describe Recipe;
 INSERT INTO Recipe (name, description, ingredients, directions, difficulty_id, category_id, user_id)
 VALUES ('Mint Tea', 'A nice cup of mint tea', '500ml of water, 50g of Mint Tea', '1) Boil water. 2) Pour water into cup. 3) Let stand for 3-5minutes', 3, 11, 1);
 
-select * from Recipe;
+
 
 /*
  insert into table recipe the following data:
@@ -44,7 +45,7 @@ select * from Recipe;
 INSERT INTO Recipe (name, description, ingredients, directions, difficulty_id, category_id, user_id)
 VALUES ('Chocolate Cake', 'A nice piece of chocolate cake', '500g of flour, 500g of sugar, 500g of chocolate', '1) Mix flour and sugar. 2) Add chocolate. 3) Bake for 20 minutes', 5, 13, 1);
 
-select * from Recipe;
+
 
 /*
  insert into table recipe the following data:
@@ -56,16 +57,11 @@ VALUES ('Pasta', 'A nice plate of pasta', '500g of pasta, 500g of tomato sauce, 
 
 select * from Recipe;
 
-/*
- insert into table recipe the following data:
- name = 'Pizza', description = 'A nice slice of pizza', ingredients ='500g of dough, 500g of tomato sauce, 500g of cheese', directions ='1) Roll out dough.
 
 
 
-/*
- insert into table category the following data:
- category = 'PHP'
- */
+
+
 
 
 

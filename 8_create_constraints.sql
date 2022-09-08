@@ -1,10 +1,13 @@
 /*
  Will implement google auth, so this check is not necessary
  */
-#
-#
-# ALTER TABLE User ADD CONSTRAINT email_is_unique UNIQUE (email);
-#
+
+use recipe_db_v2;
+
+ALTER TABLE User ADD CONSTRAINT email_is_unique UNIQUE (email);
+ALTER TABLE Category ADD CONSTRAINT category_name_is_unique UNIQUE (category);
+ALTER TABLE Recipe ADD CONSTRAINT recipe_name_is_unique UNIQUE (name);
+
 # ALTER TABLE "User" ADD CONSTRAINT email_is_valid CHECK (
 #     email REGEXP ('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
 #     );
