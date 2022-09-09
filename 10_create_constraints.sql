@@ -6,11 +6,11 @@ use recipe_db_v2;
 
 ALTER TABLE User ADD CONSTRAINT email_is_unique UNIQUE (email);
 ALTER TABLE Category ADD CONSTRAINT category_name_is_unique UNIQUE (category) ;
-ALTER TABLE Recipe ADD CONSTRAINT recipe_name_is_unique UNIQUE (name);
 /* Create constraint that checks if Instruction.instruction with the same recipe_id is unique */
 ALTER TABLE Instruction ADD CONSTRAINT instruction_is_unique UNIQUE (recipe_id, instruction);
 /* Create constraint that checks if Ingredient.ingredient with the same recipe_id is unique */
 ALTER TABLE Ingredient ADD CONSTRAINT ingredient_is_unique UNIQUE (recipe_id, ingredient);
+
 
 /*
 ALTER TABLE Instruction ADD CONSTRAINT instruction_is_unique select * from
