@@ -1,18 +1,10 @@
 use recipe_db_v2;
 
-/*
-
- insert into table user the following data:
- pseudo=Nicolay, email = nicolaybang@gmail.com
- */
 
 INSERT INTO User (pseudo, email) VALUES ('Nicolay', 'nicolaybang@gmail.com');
+INSERT INTO User (pseudo, email) VALUES ('Test-User', 'test_user@somemail.com');
 select *
 from User;
-
-/*
- insert into table difficulty the numbers 0 to 10
-*/
 
 INSERT INTO Difficulty (difficulty) VALUES (0), (1), (2), (3), (4), (5), (6), (7), (8), (9), (10);
 select * from Difficulty;
@@ -24,41 +16,23 @@ INSERT INTO Category (category) VALUES ('Gastro'), ('Fusion'), ('French'), ('Ita
                                        ('Greek'), ('Portuguese'), ('Russian'), ('Turkish'), ('African'), ('Caribbean'),
                                        ('South American'), ('Fast Food'),('BBQ'),('Healthy'),('Vegan'),('Gluten-Free'),
                                        ('Traditional'),('Scandinavian'),('Canadian'),('Other');
-select * from Category;
+
+INSERT INTO PrepTime (prep_time) VALUES ('N/A'),('15 min'), ('30 min'), ('45 min'), ('1 h'), ('1 h 15 min'), ('1 h 30 min'),
+                                        ('1 h 45 min'), ('2 h'), ('2 h 15 min'), ('2 h 30 min'), ('2 h 45 min'), ('3 h'),
+                                        ('3 h 15 min'), ('3 h 30 min'), ('3 h 45 min'), ('4 h'), ('4 h 15 min'), ('4 h 30 min'),
+                                        ('4 h 45 min'), ('5 h'), ('5 h 15 min'), ('5 h 30 min'), ('5 h 45 min'), ('6 h'), ('6+ h');
 
 
+INSERT INTO Recipe (description, difficulty_id, category_id, user_id, prep_time_id)
+VALUES ('A nice cup of mint tea', 3, 11, 1,2);
 
+INSERT INTO Recipe (description, difficulty_id, category_id, user_id, prep_time_id)
+VALUES ('A nice piece of chocolate cake', 5, 13, 1,5);
 
+INSERT INTO Recipe (description, difficulty_id, category_id, user_id, prep_time_id)
+VALUES ('A nice plate of pasta', 3, 4, 2,3);
 
-/*
- insert into table recipe the following data:
- name = 'Mint Tea', description = 'A nice cup of mint tea', ingredients ='500ml of water, 50g of Mint Tea', directions ='1) Boil water. 2) Pour water into cup. 3) Let stand for 3-5minutes' , difficulty_id = 3, category_id = 11, user_id =1
-*/
-
-INSERT INTO Recipe (name, description, difficulty_id, category_id, user_id)
-VALUES ('Mint Tea', 'A nice cup of mint tea', 3, 11, 1);
-
-
-
-/*
- insert into table recipe the following data:
- name = 'Chocolate Cake', description = 'A nice piece of chocolate cake', ingredients ='500g of flour, 500g of sugar, 500g of chocolate', directions ='1) Mix flour and sugar. 2) Add chocolate. 3) Bake for 20 minutes' , difficulty_id = 5, category_id = 22, user_id =1
-*/
-
-INSERT INTO Recipe (name, description, difficulty_id, category_id, user_id)
-VALUES ('Chocolate Cake', 'A nice piece of chocolate cake', 5, 13, 1);
-
-
-
-/*
- insert into table recipe the following data:
- name = 'Pasta', description = 'A nice plate of pasta', ingredients ='500g of pasta, 500g of tomato sauce, 500g of cheese', directions ='1) Boil water. 2) Cook pasta. 3) Mix sauce and cheese. 4) Serve' , difficulty_id = 3, category_id = 4, user_id =1
-*/
-
-INSERT INTO Recipe (name, description, difficulty_id, category_id, user_id)
-VALUES ('Pasta', 'A nice plate of pasta', 3, 4, 1);
-
-select * from Recipe;
+INSERT INTO Title (recipe_id, title) VALUES (1,'Mint Tea'), (2,'Chocolate Cake'), (3,'Pasta');
 
 INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (1, 'Mint Tea', '50g');
 INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (1, 'Water', '500ml');
@@ -71,8 +45,7 @@ INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (3, 'Pasta', '500
 INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (3, 'Tomato Sauce', '500g');
 INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (3, 'Cheese', '500g');
 
-select * from Ingredient;
-select * from Ingredient where recipe_id = 2;
+
 
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,1,'Boil water');
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,2,'Pour water into cup');
@@ -86,8 +59,6 @@ INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (3,1,'Boil w
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (3,2,'Cook pasta');
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (3,3,'Mix sauce and cheese');
 
-select * from Instruction;
-select * from Instruction where recipe_id = 1;
 
 
 
