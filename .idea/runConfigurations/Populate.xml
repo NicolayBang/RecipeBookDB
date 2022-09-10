@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Populate" type="DatabaseScript">
+    <script-file value="$PROJECT_DIR$/13_sample_data.sql" />
+    <script-mode>FILE</script-mode>
+    <data-source id="87075ac5-679b-4ab5-8564-3d681c3b629e" namespace="schema/&quot;recipe_db_v2&quot;" />
+    <method v="2" />
+  </configuration>
+</component>

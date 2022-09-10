@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Drop DB" type="DatabaseScript">
+    <data-source id="87075ac5-679b-4ab5-8564-3d681c3b629e" namespace="schema/&quot;information_schema&quot;" />
+    <script-text>drop database recipe_db_v2;</script-text>
+    <method v="2" />
+  </configuration>
+</component>
