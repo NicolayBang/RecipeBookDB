@@ -23,14 +23,14 @@ INSERT INTO PrepTime (prep_time) VALUES ('N/A'),('15 min'), ('30 min'), ('45 min
                                         ('4 h 45 min'), ('5 h'), ('5 h 15 min'), ('5 h 30 min'), ('5 h 45 min'), ('6 h'), ('6+ h');
 
 
-INSERT INTO Recipe (description, difficulty_id, category_id, user_id, prep_time_id)
-VALUES ('A nice cup of mint tea', 3, 11, 1,2);
+INSERT INTO Recipe (description, nb_of_servings, difficulty_id, category_id, user_id, prep_time_id)
+VALUES ('A nice cup of mint tea',2, 3, 11, 1,2);
 
-INSERT INTO Recipe (description, difficulty_id, category_id, user_id, prep_time_id)
-VALUES ('A nice piece of chocolate cake', 5, 13, 1,5);
+INSERT INTO Recipe (description, nb_of_servings,difficulty_id, category_id, user_id, prep_time_id)
+VALUES ('A nice piece of chocolate cake', 6 ,5, 13, 1,5);
 
-INSERT INTO Recipe (description, difficulty_id, category_id, user_id, prep_time_id)
-VALUES ('A nice plate of pasta', 3, 4, 2,3);
+INSERT INTO Recipe (description,nb_of_servings, difficulty_id, category_id, user_id, prep_time_id)
+VALUES ('A nice plate of pasta',4, 3, 4, 2,3);
 
 INSERT INTO Title (recipe_id, title) VALUES (1,'Mint Tea'), (2,'Chocolate Cake'), (3,'Pasta');
 
@@ -44,8 +44,6 @@ INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (2, 'Chocolate', 
 INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (3, 'Pasta', '500g');
 INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (3, 'Tomato Sauce', '500g');
 INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (3, 'Cheese', '500g');
-
-
 
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,1,'Boil water');
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,2,'Pour water into cup');
