@@ -22,7 +22,6 @@ INSERT INTO PrepTime (prep_time) VALUES ('N/A'),('15 min'), ('30 min'), ('45 min
                                         ('3 h 15 min'), ('3 h 30 min'), ('3 h 45 min'), ('4 h'), ('4 h 15 min'), ('4 h 30 min'),
                                         ('4 h 45 min'), ('5 h'), ('5 h 15 min'), ('5 h 30 min'), ('5 h 45 min'), ('6 h'), ('6+ h');
 
-
 INSERT INTO Recipe (description, nb_of_servings, difficulty_id, category_id, user_id, prep_time_id)
 VALUES ('A nice cup of mint tea',2, 3, 11, 1,2);
 

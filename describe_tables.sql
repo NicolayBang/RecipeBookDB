@@ -1,3 +1,5 @@
+show databases;
+
 use recipe_db_v2;
 describe User;
 describe Difficulty;
