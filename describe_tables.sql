@@ -38,3 +38,5 @@ select * from Title;
 select * from Favourites;
 select * from Favourites where user_id = 1;
 select * from Favourites where recipe_id = 1;
+
+select * from RecipeView;
