@@ -30,6 +30,17 @@ ALTER TABLE Tags
         FOREIGN KEY (category_id)
             REFERENCES Category (category_id) ;
 
+AlTER TABLE Favourites
+    ADD CONSTRAINT fk_favourites_user_id
+        FOREIGN KEY (user_id)
+            REFERENCES User (user_id);
+
+ALTER TABLE Favourites
+    ADD CONSTRAINT fk_favourites_recipe_id
+        FOREIGN KEY (recipe_id)
+            REFERENCES Recipe (recipe_id);
+
+
 /*
 ALTER TABLE Instruction ADD CONSTRAINT instruction_is_unique select * from
     (select recipe_id, step, count(*) from Instruction group by recipe_id, step) as t where count > 1;

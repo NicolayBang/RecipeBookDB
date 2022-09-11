@@ -11,8 +11,9 @@
     <script-file value="$PROJECT_DIR$/CreateTables/9_create_recipe.sql" />
     <script-file value="$PROJECT_DIR$/CreateTables/10_create_instruction.sql" />
     <script-file value="$PROJECT_DIR$/CreateTables/11_create_ingredient.sql" />
+    <script-file value="$PROJECT_DIR$/CreateTables/12_create_favourites.sql" />
     <script-mode>FILE</script-mode>
-    <data-source id="87075ac5-679b-4ab5-8564-3d681c3b629e" namespace="schema/&quot;recipe_db_v2&quot;" />
+    <data-source id="87075ac5-679b-4ab5-8564-3d681c3b629e" />
     <method v="2" />
   </configuration>
 </component>
