@@ -26,34 +26,17 @@ select * from Recipe where recipe_id = 1;
 select * from PrepTime;
 
 select * from Ingredient;
-select * from Ingredient where ingredients_id= 1;
+select * from Ingredient where recipe_id = 1;
 
 select*from Tags;
 select*from Tags where recipe_id = 1;
 
 select * from Instruction;
-select * from Instruction where instructions_id = 1;
-
-
+select * from Instruction where recipe_id = 1;
 select * from Title;
 
 select * from Favourites;
 select * from Favourites where user_id = 1;
 select * from Favourites where recipe_id = 1;
 
-select*from UnitType;
-
-select*from Unit;
-select*from Unit where unit_id = 1;
-
-select * from RecipeCardView;
-
-select * from RecipeIngredientsView;#where Ingredients.ingredients_id = 1;
-select * from RecipeIngredientsView
-         where  recipe_id = 3 ;
-
-select * from RecipeInstructionsView;
-select * from RecipeInstructionsView where recipe_id = 2;
-
-select * from FavouriteRecipesView where user_id = 1;
-
+select * from RecipeView;
