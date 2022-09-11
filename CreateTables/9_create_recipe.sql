@@ -22,6 +22,7 @@ CREATE TABLE Recipe
     nb_of_servings  TINYINT      NOT NULL,
     nb_of_likes     INT          DEFAULT 0,
     date_created    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    date_modified   DATETIME  DEFAULT CURRENT_TIMESTAMP,
     description     VARCHAR(500) NOT NULL,
     PRIMARY KEY (recipe_id),
     FOREIGN KEY (title_id) REFERENCES Title(title_id),
