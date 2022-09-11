@@ -16,7 +16,8 @@ select * from User;
 select * from Difficulty;
 select * from Category;
 select * from Image;
-select*from Tags;
+
+
 
 select * from Recipe;
 select * from Recipe where recipe_id = 1;
@@ -25,6 +26,9 @@ select * from PrepTime;
 
 select * from Ingredient;
 select * from Ingredient where recipe_id = 1;
+
+select*from Tags;
+select*from Tags where recipe_id = 1;
 
 select * from Instruction;
 select * from Instruction where recipe_id = 1;

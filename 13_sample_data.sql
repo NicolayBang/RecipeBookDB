@@ -9,14 +9,6 @@ from User;
 INSERT INTO Difficulty (difficulty) VALUES (0), (1), (2), (3), (4), (5), (6), (7), (8), (9), (10);
 select * from Difficulty;
 
-INSERT INTO Tags (tags_id) VALUES (), (), ();
-
-INSERT INTO Category (category, tags_id) VALUES ('Gastro'), ('Fusion'), ('French'), ('Italian',3),
-                                       ('Japanese'), ('Mexican'), ('Chinese'), ('Indian'), ('Thai'), ('Vietnamese'),
-                                       ('Middle Eastern',1), ('Spanish'), ('American',2), ('British'), ('German'),
-                                       ('Greek'), ('Portuguese'), ('Russian'), ('Turkish'), ('African'), ('Caribbean'),
-                                       ('South American'), ('Fast Food',2),('BBQ'),('Healthy',1),('Vegan',1),('Gluten-Free'),
-                                       ('Traditional',1),('Scandinavian'),('Canadian'),('Other');
 
 
 #INSERT INTO Category (tags_id) VALUES
@@ -27,14 +19,23 @@ INSERT INTO PrepTime (prep_time) VALUES ('N/A'),('15 min'), ('30 min'), ('45 min
                                         ('4 h 45 min'), ('5 h'), ('5 h 15 min'), ('5 h 30 min'), ('5 h 45 min'), ('6 h'), ('6+ h');
 
 INSERT INTO Title (title) VALUES ('Mint Tea'), ('Chocolate Cake'), ('Pasta');
-INSERT INTO Recipe (title_id,description, nb_of_servings, difficulty_id, category_id, user_id, prep_time_id)
-VALUES (1,'A nice cup of mint tea',2, 3, 11, 1,2);
+INSERT INTO Recipe (title_id,description, nb_of_servings, difficulty_id, user_id, prep_time_id)
+VALUES (1,'A nice cup of mint tea',2, 3, 1,2);
 
-INSERT INTO Recipe (title_id,description, nb_of_servings,difficulty_id, category_id, user_id, prep_time_id)
-VALUES (2,'A nice piece of chocolate cake', 6 ,5, 13, 1,5);
+INSERT INTO Recipe (title_id,description, nb_of_servings,difficulty_id, user_id, prep_time_id)
+VALUES (2,'A nice piece of chocolate cake', 6 ,5,1,5);
 
-INSERT INTO Recipe (title_id,description,nb_of_servings, difficulty_id, category_id, user_id, prep_time_id)
-VALUES (3,'A nice plate of pasta',4, 3, 4, 2,3);
+INSERT INTO Recipe (title_id,description,nb_of_servings, difficulty_id, user_id, prep_time_id)
+VALUES (3,'A nice plate of pasta',4, 3, 2,3);
+
+
+INSERT INTO Category (category) VALUES ('Gastro'), ('Fusion'), ('French'), ('British'),
+                                                ('Japanese'), ('Mexican'), ('Chinese'), ('Indian'), ('Thai'), ('Vietnamese'),
+                                                 ('Spanish'), ('Greek'), ('Portuguese'), ('Russian'), ('Turkish'), ('African'), ('Caribbean'),
+                                                ('South American'),('BBQ'),('German'),('Gluten-Free'),
+                                                ('Traditional'),('Scandinavian'),('Canadian'),('Other'), ('American'), ('Italian'),  ('Healthy'),
+                                                ('Vegan'), ('Middle Eastern'), ('Fast Food');
+INSERT INTO Tags (recipe_id, category_id) VALUES (1,30), (1,28),(2,26), (2,31), (3,27), (3,28);
 
 
 

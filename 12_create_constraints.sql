@@ -25,10 +25,10 @@ ALTER TABLE Tags
         FOREIGN KEY (recipe_id)
             REFERENCES Recipe(recipe_id);
 
-ALTER TABLE Category
-    ADD CONSTRAINT fk_category_tags
-        FOREIGN KEY (tags_id)
-            REFERENCES Tags (tags_id);
+ALTER TABLE Tags
+    ADD CONSTRAINT fk_tags_category
+        FOREIGN KEY (category_id)
+            REFERENCES Category (category_id) ;
 
 /*
 ALTER TABLE Instruction ADD CONSTRAINT instruction_is_unique select * from
