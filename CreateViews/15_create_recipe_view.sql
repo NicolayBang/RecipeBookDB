@@ -2,14 +2,14 @@
 
 CREATE View RecipeView AS
 (
-SELECT Title.title, Recipe.title_id                AS title_view,
-       User.email, Recipe.user_id                  AS posted_by,
+SELECT Title.title                                 AS title_view,
+       User.email                                  AS posted_by,
        Recipe.date_created                         AS creation_date,
-       Difficulty.difficulty, Recipe.difficulty_id AS difficulty_stars,
-       PrepTime.prep_time, Recipe.prep_time_id     AS cook_time,
-       Recipe.nb_of_likes                          AS popularity_view,
+       Difficulty.difficulty,
+       PrepTime.prep_time                          AS cook_time,
+       Recipe.nb_of_likes                          AS popularity,
        Recipe.nb_of_servings                       AS servings,
-       Recipe.description                          AS description_view
+       Recipe.description
 
 FROM Recipe
             INNER JOIN Title
