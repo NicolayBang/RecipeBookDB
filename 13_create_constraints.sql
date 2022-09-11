@@ -8,6 +8,10 @@ ALTER TABLE User
     ADD CONSTRAINT email_is_unique
         UNIQUE (email);
 
+ALTER TABLE User
+    ADD CONSTRAINT pseudo_is_unique
+        UNIQUE (pseudo);
+
 ALTER TABLE Category
     ADD CONSTRAINT category_name_is_unique
         UNIQUE (category) ;
