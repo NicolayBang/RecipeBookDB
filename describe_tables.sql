@@ -4,6 +4,7 @@ use recipe_db_v2;
 describe User;
 describe Difficulty;
 describe Category;
+describe Tags;
 describe Image;
 describe Recipe;
 describe PrepTime;
@@ -15,6 +16,7 @@ select * from User;
 select * from Difficulty;
 select * from Category;
 select * from Image;
+select*from Tags;
 
 select * from Recipe;
 select * from Recipe where recipe_id = 1;
