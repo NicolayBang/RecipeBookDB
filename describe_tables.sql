@@ -11,6 +11,7 @@ describe PrepTime;
 describe Ingredient;
 describe Instruction;
 describe Title;
+describe Favourites;
 
 select * from User;
 select * from Difficulty;
@@ -33,3 +34,7 @@ select*from Tags where recipe_id = 1;
 select * from Instruction;
 select * from Instruction where recipe_id = 1;
 select * from Title;
+
+select * from Favourites;
+select * from Favourites where user_id = 1;
+select * from Favourites where recipe_id = 1;
