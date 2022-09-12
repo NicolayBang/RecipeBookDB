@@ -19,6 +19,7 @@ CREATE TABLE Recipe
     image_id        varchar(255) DEFAULT 'default.jpg',
     difficulty_id   INT          DEFAULT NULL,
     prep_time_id    INT          NOT NULL,
+#     ingredients_id INT          NOT NULL,
     nb_of_servings  TINYINT      NOT NULL,
     nb_of_likes     INT          DEFAULT 0,
     date_created    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

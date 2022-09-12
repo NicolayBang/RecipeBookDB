@@ -57,20 +57,19 @@ INSERT INTO Unit (unit_type_id, unit_name) VALUES (1,'Gram'), (1,'Kilogram'), (1
                                             (3,'Jar'), (3,'Cup'), (3,'Pint'), (3,'Quart'), (3,'Gallon'), (3,'Pinch');
 
 
+INSERT INTO Ingredients (recipe_id) VALUES (1), (2), (3);
 
 
 
+INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (1, 'Mint Tea', '50', 1);
+INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (1, 'Water', '500', 4);
+INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (2, 'Flour', '500', 1);
+INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (2, 'Sugar', '500', 1);
+INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (2, 'Chocolate', '500', 1);
+INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (3, 'Pasta', '500', 1);
+INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (3, 'Tomato Sauce', '500', 1);
+INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (3, 'Cheese', '500',1);
 
-INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (1, 'Mint Tea', '50', 1);
-INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (1, 'Water', '500', 4);
-
-INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (2, 'Flour', '500', 1);
-INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (2, 'Sugar', '500', 1);
-INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (2, 'Chocolate', '500', 1);
-
-INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (3, 'Pasta', '500', 1);
-INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (3, 'Tomato Sauce', '500', 1);
-INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (3, 'Cheese', '500',1);
 
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,1,'Boil water');
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,2,'Pour water into cup');
