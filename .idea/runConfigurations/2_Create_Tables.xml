@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Create Tables" type="DatabaseScript" editBeforeRun="true">
+  <configuration default="false" name="2-Create Tables" type="DatabaseScript" editBeforeRun="true">
     <script-file value="$PROJECT_DIR$/CreateTables/1_create_database.sql" />
     <script-file value="$PROJECT_DIR$/CreateTables/2_create_user.sql" />
     <script-file value="$PROJECT_DIR$/CreateTables/3_create_difficulty.sql" />

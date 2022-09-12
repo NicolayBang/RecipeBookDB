@@ -1,4 +1,4 @@
-CREATE View RecipeView AS
+CREATE View RecipeCardView AS
 (
 SELECT Title.title           AS name,
        User.pseudo           AS posted_by,
