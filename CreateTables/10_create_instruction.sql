@@ -7,6 +7,3 @@ CREATE TABLE Instruction
     PRIMARY KEY (instruction_id)
 
 );
-ALTER TABLE Instruction
-    ADD CONSTRAINT fk_instruction_recipe_id
-        FOREIGN KEY (recipe_id) REFERENCES Recipe (recipe_id);

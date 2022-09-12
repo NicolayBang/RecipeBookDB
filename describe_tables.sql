@@ -39,4 +39,9 @@ select * from Favourites;
 select * from Favourites where user_id = 1;
 select * from Favourites where recipe_id = 1;
 
+select*from UnitType;
+
+select*from Unit;
+select*from Unit where unit_id = 1;
+
 select * from RecipeCardView;

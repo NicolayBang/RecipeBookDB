@@ -44,6 +44,21 @@ ALTER TABLE Favourites
         FOREIGN KEY (recipe_id)
             REFERENCES Recipe (recipe_id);
 
+ALTER TABLE Instruction
+    ADD CONSTRAINT fk_instruction_recipe_id
+        FOREIGN KEY (recipe_id) REFERENCES Recipe (recipe_id)
+;
+ALTER TABLE Ingredient
+    ADD CONSTRAINT fk_ingredient_recipe_id
+        FOREIGN KEY (recipe_id) REFERENCES Recipe (recipe_id);
+
+ALTER TABLE Ingredient
+    ADD CONSTRAINT fk_ingredient_unit_id
+        FOREIGN KEY (unit_id) REFERENCES Unit (unit_id);
+
+ALTER TABLE Unit
+    ADD CONSTRAINT fk_unit_unit_type_id
+        FOREIGN KEY (unit_type_id) REFERENCES UnitType (unit_type_id);
 
 /*
 ALTER TABLE Instruction ADD CONSTRAINT instruction_is_unique select * from
