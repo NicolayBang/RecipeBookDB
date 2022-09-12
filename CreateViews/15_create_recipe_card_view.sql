@@ -14,3 +14,7 @@ FROM Recipe
          INNER JOIN User ON User.user_id = Recipe.user_id
          INNER JOIN Difficulty ON Difficulty.difficulty_id = Recipe.difficulty_id
          INNER JOIN PrepTime ON PrepTime.prep_time_id = Recipe.prep_time_id );
+
+
+
+#drop view RecipeIngredientsView;

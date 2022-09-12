@@ -45,3 +45,6 @@ select*from Unit;
 select*from Unit where unit_id = 1;
 
 select * from RecipeCardView;
+
+select * from RecipeIngredientsView;#where Ingredients.ingredients_id = 1;
+select * from RecipeIngredientsView where  recipe_id = 1 ;
