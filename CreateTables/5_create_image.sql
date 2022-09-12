@@ -13,4 +13,4 @@ Create table Image
   PRIMARY KEY (image_id)
 );
 
-INSERT INTO Image (image_id) VALUE ('default.jpg');
+

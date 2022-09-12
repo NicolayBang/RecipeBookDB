@@ -1,6 +1,8 @@
 use recipe_db_v2;
 
 
+INSERT INTO Image (image_id) VALUE ('default.jpg');
+
 INSERT INTO User (pseudo, email) VALUES ('Nicolay', 'nicolaybang@gmail.com');
 INSERT INTO User (pseudo, email) VALUES ('Test-User', 'test_user@somemail.com');
 select *
@@ -37,18 +39,38 @@ INSERT INTO Category (category) VALUES ('Gastro'), ('Fusion'), ('French'), ('Bri
                                                 ('Vegan'), ('Middle Eastern'), ('Fast Food');
 INSERT INTO Tags (recipe_id, category_id) VALUES (1,30), (1,28),(2,26), (2,31), (3,27), (3,28);
 
+#Insert into UnitType all types of unit of measurement (ex metric, imperial, etc)
+INSERT INTO UnitType (unit_type_name) VALUES ('Metric'), ('US'), ('Other');
+
+#Insert into Unit all units of measurement (ex kilogram, gram, etc)
+
+# INSERT INTO Unit (unit_type_id, unit) VALUES (1,'Gram'), (1,'Kilogram'), (1,'Liter'), (1,'Milliliter'), (1,'Piece'),
+#                                             (2,'Pound'), (2,'Ounce'), (2,'Teaspoon'), (2,'Tablespoon'), (2,'Cup'), (2,'Pint'),
+#                                             (3,'Teaspoon'), (3,'Tablespoon'), (3,'Cup
+/*
+Insert into Unit table all the units of measure including metric, imperial, US, object and other
+*/
+INSERT INTO Unit (unit_type_id, unit_name) VALUES (1,'Gram'), (1,'Kilogram'), (1,'Liter'), (1,'Milliliter'), (1,'Piece'),
+                                            (2,'Pound'), (2,'Ounce'), (2,'Teaspoon'), (2,'Tablespoon'), (2,'Cup'), (2,'Pint'),
+                                            (3, 'Pinch'),
+                                            (3,'Bunch'), (3,'Can'), (3,'Bottle'), (3,'Box'), (3,'Bag'), (3,'Bowl'),
+                                            (3,'Jar'), (3,'Cup'), (3,'Pint'), (3,'Quart'), (3,'Gallon'), (3,'Pinch');
 
 
-INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (1, 'Mint Tea', '50g');
-INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (1, 'Water', '500ml');
 
-INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (2, 'Flour', '500g');
-INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (2, 'Sugar', '500g');
-INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (2, 'Chocolate', '500g');
 
-INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (3, 'Pasta', '500g');
-INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (3, 'Tomato Sauce', '500g');
-INSERT INTO Ingredient (recipe_id, ingredient, quantity) VALUE (3, 'Cheese', '500g');
+
+
+INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (1, 'Mint Tea', '50', 1);
+INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (1, 'Water', '500', 4);
+
+INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (2, 'Flour', '500', 1);
+INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (2, 'Sugar', '500', 1);
+INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (2, 'Chocolate', '500', 1);
+
+INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (3, 'Pasta', '500', 1);
+INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (3, 'Tomato Sauce', '500', 1);
+INSERT INTO Ingredient (recipe_id, ingredient, quantity, unit_id) VALUE (3, 'Cheese', '500',1);
 
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,1,'Boil water');
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,2,'Pour water into cup');
@@ -63,7 +85,6 @@ INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (3,2,'Cook p
 INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (3,3,'Mix sauce and cheese');
 
 INSERT INTO Favourites (user_id, recipe_id) VALUES (1,2), (1,3),(2,1);
-
 
 
 
