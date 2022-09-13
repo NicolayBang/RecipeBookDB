@@ -49,7 +49,11 @@ select*from Unit where unit_id = 1;
 select * from RecipeCardView;
 
 select * from RecipeIngredientsView;#where Ingredients.ingredients_id = 1;
-select * from RecipeIngredientsView where  recipe_id = 2 ;
+select * from RecipeIngredientsView
+         where  recipe_id = 3 ;
 
 select * from RecipeInstructionsView;
 select * from RecipeInstructionsView where recipe_id = 2;
+
+select * from FavouriteRecipesView where user_id = 1;
+

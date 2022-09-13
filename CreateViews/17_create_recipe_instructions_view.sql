@@ -3,7 +3,7 @@
 # in ascending order based on the step_id of the Instruction
 # and the name of the recipe
 
-drop view if exists RecipeInstructionsView;
+#drop view if exists RecipeInstructionsView;
 CREATE View RecipeInstructionsView AS
     (
      SELECT

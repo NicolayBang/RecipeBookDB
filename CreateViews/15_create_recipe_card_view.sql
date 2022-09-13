@@ -1,13 +1,18 @@
+
+drop view if exists RecipeCardView;
+
 CREATE View RecipeCardView AS
 (
 SELECT Title.title           AS name,
        User.pseudo           AS posted_by,
+       User.user_id                      ,
        Recipe.date_created   AS creation_date,
        Difficulty.difficulty,
        PrepTime.prep_time    AS cook_time,
        Recipe.nb_of_likes    AS popularity,
        Recipe.nb_of_servings AS servings,
-       Recipe.description
+       Recipe.description,
+       Recipe.recipe_id
 
 FROM Recipe
          INNER JOIN Title ON Title.title_id = Recipe.title_id
