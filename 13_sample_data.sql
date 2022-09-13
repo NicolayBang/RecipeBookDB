@@ -70,18 +70,21 @@ INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (3,
 INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (3, 'Tomato Sauce', '500', 1);
 INSERT INTO Ingredient (ingredients_id, ingredient, quantity, unit_id) VALUE (3, 'Cheese', '500',1);
 
+INSERT INTO Steps (step_nb) VALUES ('1)'), ('2)'), ('3)'), ('4)'), ('5)'), ('6)'), ('7)'), ('8)'), ('9)'),
+                                   ('10)'), ('11)'), ('12)'), ('13)'), ('14)'), ('15)'), ('16)'), ('17)'), ('18)'), ('19)'), ('20)')
+                                   , ('21)'), ('22)'), ('23)'), ('24)'), ('25)'), ('26)'), ('27)'), ('28)'), ('29)'), ('30)');
 
-INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,1,'Boil water');
-INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,2,'Pour water into cup');
-INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (1,3,'Let stand');
+INSERT INTO Instructions (recipe_id) VALUES (1), (2), (3);
 
-INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (2,1,'Mix flour and sugar');
-INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (2,2,'Add chocolate');
-INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (2,3,'Bake for 20 minutes');
-
-INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (3,1,'Boil water');
-INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (3,2,'Cook pasta');
-INSERT INTO Instruction (recipe_id, step_number, instruction) VALUE (3,3,'Mix sauce and cheese');
+INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (1,'Boil water',1);
+INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (1,'Pour water into cup', 2);
+INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (1,'Let stand',3);
+INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (2,'Mix flour and sugar',1);
+INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (2,'Add chocolate',2);
+INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (2,'Bake for 20 minutes',3);
+INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (3,'Boil water',1);
+INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (3,'Cook pasta',2);
+INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (3,'Mix sauce and cheese',3);
 
 INSERT INTO Favourites (user_id, recipe_id) VALUES (1,2), (1,3),(2,1);
 
