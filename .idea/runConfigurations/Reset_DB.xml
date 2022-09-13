@@ -15,6 +15,7 @@
     <script-file value="$PROJECT_DIR$/CreateTables/13_create_favourites.sql" />
     <script-file value="$PROJECT_DIR$/13_create_constraints.sql" />
     <script-file value="$PROJECT_DIR$/CreateViews/15_create_recipe_card_view.sql" />
+    <script-file value="$PROJECT_DIR$/CreateViews/17_create_recipe_instructions_view.sql" />
     <script-file value="$PROJECT_DIR$/CreateViews/16_create_recipe_ingredients_view.sql" />
     <script-file value="$PROJECT_DIR$/13_sample_data.sql" />
     <script-mode>FILE</script-mode>
