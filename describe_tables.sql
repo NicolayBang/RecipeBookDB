@@ -33,6 +33,8 @@ select*from Tags where recipe_id = 1;
 
 select * from Instruction;
 select * from Instruction where instructions_id = 1;
+
+
 select * from Title;
 
 select * from Favourites;
@@ -48,3 +50,6 @@ select * from RecipeCardView;
 
 select * from RecipeIngredientsView;#where Ingredients.ingredients_id = 1;
 select * from RecipeIngredientsView where  recipe_id = 2 ;
+
+select * from RecipeInstructionsView;
+select * from RecipeInstructionsView where recipe_id = 2;
