@@ -86,7 +86,7 @@ INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (3,'Boil wa
 INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (3,'Cook pasta',2);
 INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (3,'Mix sauce and cheese',3);
 
-INSERT INTO Favourites (user_id, recipe_id) VALUES (1,2), (1,3),(2,1);
+INSERT INTO Favourites (user_id, recipe_id) VALUES (1,2), (1,3),(1,1),(2,1);
 
 
 
