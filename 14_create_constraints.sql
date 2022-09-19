@@ -16,7 +16,7 @@ ALTER TABLE User
 
 ALTER TABLE Category
     ADD CONSTRAINT category_name_is_unique
-        UNIQUE (category) ;
+        UNIQUE (category_id) ;
 /* Create constraint that checks if Instruction.instruction with the same recipe_id is unique */
 
 /* Create constraint that checks if Ingredient.ingredient with the same recipe_id is unique */

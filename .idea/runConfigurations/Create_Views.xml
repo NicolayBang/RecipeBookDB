@@ -1,6 +1,11 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Create Views" type="DatabaseScript" editBeforeRun="true">
     <script-file value="$PROJECT_DIR$/CreateViews/15_create_recipe_view.sql" />
+    <script-file value="$PROJECT_DIR$/CreateViews/15_create_recipe_card_view.sql" />
+    <script-file value="$PROJECT_DIR$/CreateViews/16_create_recipe_ingredients_view.sql" />
+    <script-file value="$PROJECT_DIR$/CreateViews/17_create_recipe_instructions_view.sql" />
+    <script-file value="$PROJECT_DIR$/CreateViews/18_create_featured_view.sql" />
+    <script-file value="$PROJECT_DIR$/CreateViews/19_create_tags_view.sql" />
     <script-mode>FILE</script-mode>
     <data-source id="87075ac5-679b-4ab5-8564-3d681c3b629e" namespace="schema/&quot;recipe_db_v2&quot;" />
     <method v="2" />

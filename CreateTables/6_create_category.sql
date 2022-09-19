@@ -6,8 +6,7 @@ Category:
   */
 CREATE TABLE Category
 (
-    category_id int(11)     NOT NULL AUTO_INCREMENT,
-    category    tinytext    NOT NULL,
+    category_id char(25)     NOT NULL,
     PRIMARY KEY (category_id)
 );
 

@@ -31,13 +31,13 @@ INSERT INTO Recipe (title_id,description,nb_of_servings, difficulty_id, user_id,
 VALUES (3,'A nice plate of pasta',4, 3, 2,3);
 
 
-INSERT INTO Category (category) VALUES ('Gastro'), ('Fusion'), ('French'), ('British'),
+INSERT INTO Category (category_id) VALUES ('Gastro'), ('Fusion'), ('French'), ('British'),
                                                 ('Japanese'), ('Mexican'), ('Chinese'), ('Indian'), ('Thai'), ('Vietnamese'),
                                                  ('Spanish'), ('Greek'), ('Portuguese'), ('Russian'), ('Turkish'), ('African'), ('Caribbean'),
                                                 ('South American'),('BBQ'),('German'),('Gluten-Free'),
                                                 ('Traditional'),('Scandinavian'),('Canadian'),('Other'), ('American'), ('Italian'),  ('Healthy'),
                                                 ('Vegan'), ('Middle Eastern'), ('Fast Food');
-INSERT INTO Tags (recipe_id, category_id) VALUES (1,30), (1,28),(2,26), (2,31), (3,27), (3,28);
+INSERT INTO Tags (recipe_id, category_id) VALUES (1,'British'), (1,'Middle Eastern'),(2,'Italian'), (2,'Gastro'), (3,'American'), (3,'Traditional');
 
 #Insert into UnitType all types of unit of measurement (ex metric, imperial, etc)
 INSERT INTO UnitType (unit_type_name) VALUES ('Metric'), ('US'), ('Other');
