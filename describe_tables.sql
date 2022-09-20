@@ -39,9 +39,62 @@ select * from Favourites;
 select * from Favourites where user_id = 1;
 select * from Favourites where recipe_id = 1;
 
-select * from RecipeCardView;
+
+
+
+
+
+
+
 select * from RecipeIngredientsView;
 select * from RecipeInstructionsView where recipe_id = 1;
 select * from TagsView;
 
 select * from TagsView;
+
+select * from RecipeCardView;
+
+#Create a query that gets all the recipe with the selected category_id
+select * from RecipeCardView where category_id = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
