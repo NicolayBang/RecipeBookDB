@@ -57,7 +57,9 @@ INSERT INTO Category (category_id) VALUES ('Gastro'), ('Fusion'), ('French'), ('
 INSERT INTO Category (category_id) VALUES ('Fish'), ('Meat'), ('Vegetarian'), ('Dessert'), ('Breakfast'), ('Lunch'), ('Dinner'), ('Snack'), ('Appetizer'), ('Drink'),
                                           ('Brunch'), ('Side Dish'), ('Salad'), ('Soup'), ('Poultry');
 
-INSERT INTO Tags (recipe_id, category_id) VALUES (1,'British'), (1,'Middle Eastern'),(2,'Italian'), (2,'Gastro'), (3,'American'), (3,'Traditional'), (4,'French'), (4,'Healthy'), (5,'American'), (5,'BBQ'), (6,'American'), (6,'Healthy');
+INSERT INTO Tags (recipe_id, category_id) VALUES (1,'British'), (1,'Middle Eastern'),(2,'Italian'),
+                                                 (2,'Gastro'), (3,'American'), (3,'Traditional'), (4,'French'), (4,'Healthy'), (5,'American'), (5,'BBQ'), (6,'American'), (6,'Healthy'),
+                                                 (7,'Italian'), (7,'Poultry'), (8,'Poultry'), (8,'Traditional'), (9,'Chinese'), (9,'Poultry');
 
 #Insert into UnitType all types of unit of measurement (ex metric, imperial, etc)
 INSERT INTO UnitType (unit_type_name) VALUES ('Metric'), ('US'), ('Other');
@@ -187,7 +189,7 @@ INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (9,'Cook fo
 
 
 
-INSERT INTO Favourites (user_id, recipe_id) VALUES (1,2), (1,3),(1,1),(1,4),(1,5),(1,6),(2,1);
+INSERT INTO Favourites (user_id, recipe_id) VALUES (1,2), (1,3),(1,1),(1,4),(1,5),(1,6),(1,7), (1,8), (1,9),(2,1);
 
 
 
