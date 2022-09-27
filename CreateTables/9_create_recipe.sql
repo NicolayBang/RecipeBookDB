@@ -14,7 +14,7 @@
 CREATE TABLE Recipe
 (
     recipe_id       INT          NOT NULL AUTO_INCREMENT,
-    title_id        INT          NOT NULL,
+    title_id        BIGINT          NOT NULL,
     user_id         INT          NOT NULL,
     image_id        varchar(255) DEFAULT 'default.jpg',
     difficulty_id   INT          DEFAULT NULL,

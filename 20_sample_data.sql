@@ -24,26 +24,28 @@ INSERT INTO PrepTime (prep_time) VALUES ('N/A'),('15 min'), ('30 min'), ('45 min
 INSERT INTO Title (title) VALUES ('Mint Tea'), ('Chocolate Cake'), ('Pasta');
 INSERT INTO Title (title) VALUES ('Traditional French Omelette'), ('Southern Fried Chicken'), ('Baked Salmon');
 INSERT INTO Title (title) VALUES ('Chicken Parmesan'), ('Chicken Pot Pie'), ('Chicken and Dumplings');
+#insert into Title (title) values ('Chicken and Rice Casserole') returning title_id;
+
 INSERT INTO Recipe (title_id,description, nb_of_servings, difficulty_id, user_id, prep_time_id)
-VALUES (1,'A nice cup of mint tea',2, 3, 1,2);
+VALUES (1,'Traditional Moroccan mint Tea. ',2, 3, 1,2);
 
 INSERT INTO Recipe (title_id,description, nb_of_servings,difficulty_id, user_id, prep_time_id)
-VALUES (2,'A nice piece of chocolate cake', 6 ,5,1,5);
+VALUES (2,'American style chocolate cake with more sugar than anyone should need!', 6 ,5,1,5);
 
 INSERT INTO Recipe (title_id,description,nb_of_servings, difficulty_id, user_id, prep_time_id)
-VALUES (3,'A nice plate of pasta',4, 3, 2,3);
+VALUES (3,'Carbonara Pasta. If you put cream in it, an Italian will know about it. He will hunt you down and he will kill you!',4, 3, 2,3);
 
 /*Populate with 10 different recipes
 */
 INSERT INTO Recipe (title_id,description,nb_of_servings, difficulty_id, user_id, prep_time_id)
-VALUES (4,'Hotel style French omelette',2, 4, 1,2),
-       (5,'Southern fried chicken',4, 5, 1,3),
-       (6,'Baked salmon',2, 6, 1,4);
+VALUES (4,'Hotel style French omelette, the classic French method! Gordon Ramsey would be proud!',2, 4, 1,2),
+       (5,'Southern fried chicken the way the make it down in South Carolina! Crispy outside and juicy inside!',4, 5, 1,3),
+       (6,'This recipe is perfect for when in need of a quick and healthy meal.',2, 6, 1,4);
 
 INSERT INTO Recipe (title_id,description,nb_of_servings, difficulty_id, user_id, prep_time_id)
-VALUES (7,'Chicken Parmesan',4, 7, 1,5),
-       (8,'Chicken Pot Pie',2, 8, 1,6),
-       (9,'Chicken Dumplings',4, 9, 1,7);
+VALUES (7,'Chicken, parmesan and a marinara sauce, what is not to like?',4, 7, 1,5),
+       (8,'Grandma\'s traditional chicken pot pie recipe from back in the day when you could buy a house on a factory worker\'s salary!',2, 8, 1,6),
+       (9,'Chinese chicken dumpling from Beijing',4, 9, 1,7);
 
 
 
@@ -57,8 +59,8 @@ INSERT INTO Category (category_id) VALUES ('Gastro'), ('Fusion'), ('French'), ('
 INSERT INTO Category (category_id) VALUES ('Fish'), ('Meat'), ('Vegetarian'), ('Dessert'), ('Breakfast'), ('Lunch'), ('Dinner'), ('Snack'), ('Appetizer'), ('Drink'),
                                           ('Brunch'), ('Side Dish'), ('Salad'), ('Soup'), ('Poultry');
 
-INSERT INTO Tags (recipe_id, category_id) VALUES (1,'British'), (1,'Middle Eastern'),(2,'Italian'),
-                                                 (2,'Gastro'), (3,'American'), (3,'Traditional'), (4,'French'), (4,'Healthy'), (5,'American'), (5,'BBQ'), (6,'American'), (6,'Healthy'),
+INSERT INTO Tags (recipe_id, category_id) VALUES (1,'British'), (1,'Middle Eastern'),(2,'American'), (2,'Traditional'),(3,'Italian'),
+                                                 (3,'Gastro'),  (4,'French'), (4,'Healthy'), (5,'American'), (5,'BBQ'), (6,'American'), (6,'Healthy'),
                                                  (7,'Italian'), (7,'Poultry'), (8,'Poultry'), (8,'Traditional'), (9,'Chinese'), (9,'Poultry');
 
 #Insert into UnitType all types of unit of measurement (ex metric, imperial, etc)
