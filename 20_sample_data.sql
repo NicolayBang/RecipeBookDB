@@ -82,7 +82,7 @@ INSERT INTO Unit (unit_type_id, unit_name) VALUES (3, ''),
                                             (3,'Jar'), (3,'Cup'),  (3, 'Pinch'),(3,'Clove'),(3,'Sprigs');
 
 
-INSERT INTO Ingredients (recipe_id) VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9);
+INSERT INTO Ingredients (recipe_id) VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9) returning ingredients_id;
 
 
 
