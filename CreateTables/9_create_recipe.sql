@@ -20,7 +20,7 @@ CREATE TABLE Recipe
     difficulty_id   INT          DEFAULT NULL,
     prep_time_id    INT          NOT NULL,
 #     ingredients_id INT          NOT NULL,
-    nb_of_servings  TINYINT      NOT NULL,
+    nb_of_servings  TINYINT (12)      NOT NULL,
     nb_of_likes     INT          DEFAULT 0,
     date_created    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     date_modified   DATETIME  DEFAULT CURRENT_TIMESTAMP,
