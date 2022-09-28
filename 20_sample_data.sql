@@ -8,7 +8,7 @@ INSERT INTO User (pseudo, email) VALUES ('Test-User', 'test_user@somemail.com');
 select *
 from User;
 
-INSERT INTO Difficulty (difficulty) VALUES (0), (1), (2), (3), (4), (5), (6), (7), (8), (9), (10);
+INSERT INTO Difficulty (difficulty) VALUES  (1), (2), (3), (4), (5);
 select * from Difficulty;
 
 
@@ -39,13 +39,13 @@ VALUES (3,'Carbonara Pasta. If you put cream in it, an Italian will know about i
 */
 INSERT INTO Recipe (title_id,description,nb_of_servings, difficulty_id, user_id, prep_time_id)
 VALUES (4,'Hotel style French omelette, the classic French method! Gordon Ramsey would be proud!',2, 4, 1,2),
-       (5,'Southern fried chicken the way the make it down in South Carolina! Crispy outside and juicy inside!',4, 5, 1,3),
-       (6,'This recipe is perfect for when in need of a quick and healthy meal.',2, 6, 1,4);
+       (5,'Southern fried chicken the way the make it down in South Carolina! Crispy outside and juicy inside!',4, 3, 1,3),
+       (6,'This recipe is perfect for when in need of a quick and healthy meal.',2, 3, 1,4);
 
 INSERT INTO Recipe (title_id,description,nb_of_servings, difficulty_id, user_id, prep_time_id)
-VALUES (7,'Chicken, parmesan and a marinara sauce, what is not to like?',4, 7, 1,5),
-       (8,'Grandma\'s traditional chicken pot pie recipe from back in the day when you could buy a house on a factory worker\'s salary!',2, 8, 1,6),
-       (9,'Chinese chicken dumpling from Beijing',4, 9, 1,7);
+VALUES (7,'Chicken, parmesan and a marinara sauce, what is not to like?',4, 5, 1,5),
+       (8,'Grandma\'s traditional chicken pot pie recipe from back in the day when you could buy a house on a factory worker\'s salary!',2, 4, 1,6),
+       (9,'Chinese chicken dumpling from Beijing',4, 2, 1,7);
 
 
 
@@ -192,6 +192,9 @@ INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (9,'Cook fo
 
 
 INSERT INTO Favourites (user_id, recipe_id) VALUES (1,2), (1,3),(1,1),(1,4),(1,5),(1,6),(1,7), (1,8), (1,9),(2,1);
+
+#This is to make the recipe added via postman appear on the client since it is programmed to show the favourite recipes of user_id 1
+#INSERT INTO Favourites (user_id, recipe_id) VALUES (1,10);
 
 
 
