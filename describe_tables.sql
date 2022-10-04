@@ -48,7 +48,6 @@ select * from TagsView;
 select * from RecipeCardView;
 
 #Create a query that gets all the recipe with the selected category_id
-select * from RecipeCardView where tags_id = 1;
 SELECT LAST_INSERT_ID() as id;
 
 

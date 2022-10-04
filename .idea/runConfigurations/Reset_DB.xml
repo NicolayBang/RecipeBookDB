@@ -19,7 +19,8 @@
     <script-file value="$PROJECT_DIR$/CreateViews/16_create_recipe_ingredients_view.sql" />
     <script-file value="$PROJECT_DIR$/CreateViews/18_create_featured_view.sql" />
     <script-file value="$PROJECT_DIR$/CreateViews/19_create_tags_view.sql" />
-    <script-file value="$PROJECT_DIR$/20_sample_data.sql" />
+    <script-file value="$PROJECT_DIR$/CreateViews/20_create_cooking_time_view.sql" />
+    <script-file value="$PROJECT_DIR$/21_populate.sql" />
     <script-mode>FILE</script-mode>
     <data-source id="87075ac5-679b-4ab5-8564-3d681c3b629e" />
     <method v="2" />
