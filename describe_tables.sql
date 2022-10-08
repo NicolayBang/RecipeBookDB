@@ -1,6 +1,6 @@
 show databases;
 
-use recipe_db_v2;
+# use recipe_db_v2;
 describe User;
 describe Difficulty;
 describe Category;
@@ -21,19 +21,25 @@ select * from Image;
 select*from Unit;
 
 select * from Recipe;
-select * from Recipe where recipe_id = 1;
+select * from Recipe where recipe_id = 10;
 
 select * from PrepTime;
 
 select * from Ingredient;
 select * from Ingredient where ingredients_id = 10;
+select * from Ingredient where ingredients_id = 11;
 
 select*from Tags;
 select*from Tags where recipe_id = 10;
 select* from Category;
 select * from Instruction;
-select * from Instruction where instructions_id = 4;
+select * from Instruction where instructions_id = 10;
+select * from Instructions where recipe_id = 10;
 select * from Title;
+select* from Steps;
+
+
+select* from Instruction where instructions_id=11;
 
 select * from Favourites;
 select * from Favourites where user_id = 1;
@@ -52,7 +58,7 @@ SELECT LAST_INSERT_ID() as id;
 
 
 SELECT unit_id FROM Unit Where unit_name = 'Cup'
-
+# INSERT INTO Ingredients (recipe_id) VALUE (10)RETURNING ingredients_id
 
 
 

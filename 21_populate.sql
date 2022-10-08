@@ -1,10 +1,11 @@
-use recipe_db_v2;
+# use recipe_db_v2;
 
 
 INSERT INTO Image (image_id) VALUE ('default.jpg');
 
 INSERT INTO User (pseudo, email) VALUES ('Nicolay', 'nicolaybang@gmail.com');
 INSERT INTO User (pseudo, email) VALUES ('Test-User', 'test_user@somemail.com');
+
 select *
 from User;
 
@@ -61,7 +62,8 @@ INSERT INTO Category (category_id) VALUES ('Fish'), ('Meat'), ('Vegetarian'), ('
 
 INSERT INTO Tags (recipe_id, category_id) VALUES (1,'British'), (1,'Middle Eastern'),(2,'American'), (2,'Traditional'),(3,'Italian'),
                                                  (3,'Gastro'),  (4,'French'), (4,'Healthy'), (5,'American'), (5,'BBQ'), (6,'American'), (6,'Healthy'),
-                                                 (7,'Italian'), (7,'Poultry'), (8,'Poultry'), (8,'Traditional'), (9,'Chinese'), (9,'Poultry');
+                                                  (7,'Italian'), (7,'Poultry'), (8,'Poultry'), (8,'Traditional'), (9,'Chinese'), (9,'Poultry');
+INSERT INTO Tags (recipe_id, category_id) VALUES (1,'Vegan');
 
 #Insert into UnitType all types of unit of measurement (ex metric, imperial, etc)
 INSERT INTO UnitType (unit_type_name) VALUES ('Metric'), ('US'), ('Other');
@@ -82,7 +84,8 @@ INSERT INTO Unit (unit_type_id, unit_name) VALUES (3, ''),
                                             (3,'Jar'), (3,'Cup'),  (3, 'Pinch'),(3,'Clove'),(3,'Sprigs');
 
 
-INSERT INTO Ingredients (recipe_id) VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9) returning ingredients_id;
+INSERT INTO Ingredients (recipe_id) VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9);
+#returning ingredients_id; => for 10.5 and above only
 
 
 
@@ -191,10 +194,13 @@ INSERT INTO Instruction (instructions_id,instruction, step_id) VALUE (9,'Cook fo
 
 
 
+
 INSERT INTO Favourites (user_id, recipe_id) VALUES (1,2), (1,3),(1,1),(1,4),(1,5),(1,6),(1,7), (1,8), (1,9),(2,1);
 
 #This is to make the recipe added via postman appear on the client since it is programmed to show the favourite recipes of user_id 1
 #INSERT INTO Favourites (user_id, recipe_id) VALUES (1,10);
+
+#disconnect all users from database
 
 
 

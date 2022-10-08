@@ -24,6 +24,10 @@ FROM Recipe
 
 #drop view RecipeIngredientsView;
 
+# FLUSH USER_RESOURCES;
+#
+# GRANT ALL PRIVILEGES ON l9wg8442wjqiydnn TO 'h0t8uqbccnbr14zr'@'107.171.153.230';
+
 
 
 

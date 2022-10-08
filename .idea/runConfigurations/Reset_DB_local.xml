@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Reset_DB" type="DatabaseScript" editBeforeRun="true">
-    <script-file value="$PROJECT_DIR$/CreateTables/1_create_database.sql" />
+  <configuration default="false" name="Reset_DB_local" type="DatabaseScript" editBeforeRun="true">
+    <script-file value="$PROJECT_DIR$/CreateTables/1_create_database_local.sql" />
     <script-file value="$PROJECT_DIR$/CreateTables/2_create_user.sql" />
     <script-file value="$PROJECT_DIR$/CreateTables/3_create_difficulty.sql" />
     <script-file value="$PROJECT_DIR$/CreateTables/4_create_tags.sql" />

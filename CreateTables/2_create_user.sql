@@ -1,4 +1,4 @@
-use recipe_db_v2;
+# use recipe_db_v2;
  CREATE TABLE User (
     user_id INT(11) NOT NULL AUTO_INCREMENT,
     pseudo VARCHAR(20) NOT NULL,

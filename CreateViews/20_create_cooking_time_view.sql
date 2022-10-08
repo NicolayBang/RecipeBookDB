@@ -6,4 +6,4 @@ CREATE VIEW CookingTimeView AS
            FROM PrepTime
     );
 
-select * from CookingTimeView;
+# select * from CookingTimeView;

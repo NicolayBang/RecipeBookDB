@@ -15,6 +15,7 @@
     <script-file value="$PROJECT_DIR$/CreateTables/13_create_favourites.sql" />
     <script-mode>FILE</script-mode>
     <data-source id="87075ac5-679b-4ab5-8564-3d681c3b629e" />
+    <data-source id="b4e88b5d-0528-4cf0-b058-d3f6a18935c8" />
     <method v="2" />
   </configuration>
 </component>

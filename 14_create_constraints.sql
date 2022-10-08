@@ -2,7 +2,7 @@
  Will implement google auth, so this check is not necessary
  */
 
-use recipe_db_v2;
+
 
 
 
@@ -98,7 +98,43 @@ ALTER TABLE Instructions
         FOREIGN KEY (recipe_id)
             REFERENCES Recipe (recipe_id);
 
-SHOW ENGINE INNODB STATUS;
+ALTER TABLE Tags
+    ADD CONSTRAINT tags_are_unique
+        UNIQUE (recipe_id, category_id);
+
+
+#The user shouldn't be able to add more than 3 tags to a recipe
+CREATE FUNCTION check_max_3_tags(
+    recipe_id INT
+)
+RETURNS BOOL
+BEGIN
+    DECLARE max_3_tags BOOL;
+    SET max_3_tags = (SELECT COUNT(*)
+                      FROM Tags
+                      WHERE recipe_id = Tags.recipe_id) < 3;
+    RETURN max_3_tags;
+END;
+
+CREATE TRIGGER check_max_3_tags_trigger
+    BEFORE INSERT
+    ON Tags FOR EACH ROW
+    BEGIN
+        IF NOT check_max_3_tags(NEW.recipe_id) THEN
+            SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Too many tags';
+        END IF;
+    END;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
